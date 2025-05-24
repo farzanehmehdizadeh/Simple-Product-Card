@@ -7,10 +7,7 @@
     border-radius: 10px;
     margin-block: 100px;
     border: 3px solid whitesmoke;
-
-
-    
-    
+ 
 }
 .leftside{
     width: 50%;
@@ -93,4 +90,76 @@ z-index: 9999;
     width: 80px;
     height: 40px;
     margin-inline: 3px;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      margin-inline: 20px;
+      margin-block: 30px;
+    }
+  
+    .leftside, .rightside {
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .leftside {
+      height: 200px;
+    }
+  
+    .product_title, .product_name, .product_detail {
+      font-size: 16px;
+      padding-left: 5px;
+    }
+  
+    #tagp, #tagp2 {
+      font-size: 16px;
+    }
+  
+    .button {
+      width: 100%;
+      margin-inline: 0;
+    }
+  
+    .button p {
+      font-size: 14px;
+    }
+  
+    #popup {
+      width: 50%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    margin-inline: 40px;
+    margin-block: 50px;
+  }
+
+  .leftside, .rightside {
+    width: 50%;
+  }
+
+  .leftside {
+    height: auto;
+  }
+
+  .product_title, .product_name, .product_detail {
+    font-size: 18px;
+    padding-left: 8px;
+  }
+
+  .button {
+    width: 90%;
+    margin-inline: 5%;
+  }
+
+  .button p {
+    font-size: 15px;
+  }
+
+  #popup {
+    width: 400px;
+  }
 }
